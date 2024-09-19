@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SlotView" customModule="RocketplayCasino" customModuleProvider="target">
+            <connections>
+                <outlet property="slotPickerView" destination="DdX-7F-yYN" id="Hkc-eW-sCX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="CIB-LU-hRJ">
+                    <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                </imageView>
+                <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DdX-7F-yYN">
+                    <rect key="frame" x="106.66666666666669" y="-14" width="639" height="432"/>
+                </pickerView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DdX-7F-yYN" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1.1" id="36d-Wi-cln"/>
+                <constraint firstItem="DdX-7F-yYN" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.75" id="8kr-9x-FOQ"/>
+                <constraint firstItem="DdX-7F-yYN" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="SyX-vL-1zd"/>
+                <constraint firstItem="DdX-7F-yYN" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="16" id="U9i-D1-h7v"/>
+                <constraint firstItem="CIB-LU-hRJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hDh-Ms-1vu"/>
+                <constraint firstAttribute="trailing" secondItem="CIB-LU-hRJ" secondAttribute="trailing" id="kBg-sH-McK"/>
+                <constraint firstAttribute="bottom" secondItem="CIB-LU-hRJ" secondAttribute="bottom" id="tYr-Ig-mGp"/>
+                <constraint firstItem="CIB-LU-hRJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xkM-jA-tw6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="117.60563380281691" y="-11.450381679389313"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="frame" width="636" height="322"/>
+    </resources>
+</document>

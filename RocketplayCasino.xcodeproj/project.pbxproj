@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7093D832C935F2400448604 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7093D822C935F2400448604 /* AppDelegate.swift */; };
+		C7093D892C935F2400448604 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7093D882C935F2400448604 /* GameScene.swift */; };
+		C7093D8B2C935F2400448604 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7093D8A2C935F2400448604 /* GameViewController.swift */; };
+		C7093D8E2C935F2400448604 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C7093D8D2C935F2400448604 /* Base */; };
+		C7093D902C935F2500448604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7093D8F2C935F2500448604 /* Assets.xcassets */; };
+		C7093D932C935F2500448604 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C7093D922C935F2500448604 /* Base */; };
+		C7093DA02C93604100448604 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7093D9F2C93604100448604 /* GradientView.swift */; };
+		C7093DA22C93622000448604 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7093DA12C93622000448604 /* MenuViewController.swift */; };
+		C7093DA82C93776000448604 /* Inter-VariableFont_opsz,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7093DA72C93776000448604 /* Inter-VariableFont_opsz,wght.ttf */; };
+		C7093DAB2C937DCA00448604 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7093DAA2C937DCA00448604 /* ShadowButton.swift */; };
+		C7093DAF2C93804700448604 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7093DAE2C93804700448604 /* UIView+Ext.swift */; };
+		C7093DB32C93807E00448604 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7093DB22C93807E00448604 /* AudioManager.swift */; };
+		C7093DB52C9380B500448604 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7093DB42C9380B500448604 /* SettingViewController.swift */; };
+		C7093DB72C93810C00448604 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7093DB62C93810C00448604 /* SplashViewController.swift */; };
+		C722DACD2C99DB48005E0466 /* BallNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722DACC2C99DB48005E0466 /* BallNode.swift */; };
+		C722DACF2C99DD5C005E0466 /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722DACE2C99DD5C005E0466 /* PhysicsCategory.swift */; };
+		C722DAD12C99DE91005E0466 /* BarrierNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722DAD02C99DE91005E0466 /* BarrierNode.swift */; };
+		C722DAD32C99F408005E0466 /* BrickNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C722DAD22C99F408005E0466 /* BrickNode.swift */; };
+		C7460D4C2C97430600073289 /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7460D4B2C97430600073289 /* WheelView.swift */; };
+		C7460D4E2C97430E00073289 /* WheelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7460D4D2C97430E00073289 /* WheelView.xib */; };
+		C7460D522C975FEB00073289 /* RouletteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7460D512C975FEB00073289 /* RouletteModel.swift */; };
+		C7460D542C9761F000073289 /* Judson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7460D532C9761F000073289 /* Judson-Bold.ttf */; };
+		C7B3317A2C95852F005B5469 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B331792C95852F005B5469 /* QuizViewController.swift */; };
+		C7B3317E2C95B263005B5469 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B3317D2C95B263005B5469 /* String+Ext.swift */; };
+		C7B331802C95B3DC005B5469 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B3317F2C95B3DC005B5469 /* CustomButton.swift */; };
+		C7B331852C95D820005B5469 /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B331842C95D820005B5469 /* GameModels.swift */; };
+		C7B331872C95D835005B5469 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B331862C95D835005B5469 /* GameViewModel.swift */; };
+		C7B331912C95EEE6005B5469 /* SlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B331902C95EEE6005B5469 /* SlotView.swift */; };
+		C7B331932C95EEEE005B5469 /* SlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B331922C95EEEE005B5469 /* SlotView.xib */; };
+		C7E157052C95F6CD0045BA4F /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E157042C95F6CD0045BA4F /* PopupView.swift */; };
+		C7E157072C95F6DD0045BA4F /* PopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E157062C95F6DD0045BA4F /* PopupView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C7093D7F2C935F2400448604 /* RocketplayCasino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketplayCasino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7093D822C935F2400448604 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7093D882C935F2400448604 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C7093D8A2C935F2400448604 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C7093D8D2C935F2400448604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7093D8F2C935F2500448604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7093D922C935F2500448604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7093D9F2C93604100448604 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		C7093DA12C93622000448604 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C7093DA62C936D2900448604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7093DA72C93776000448604 /* Inter-VariableFont_opsz,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_opsz,wght.ttf"; sourceTree = "<group>"; };
+		C7093DAA2C937DCA00448604 /* ShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
+		C7093DAE2C93804700448604 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		C7093DB22C93807E00448604 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		C7093DB42C9380B500448604 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		C7093DB62C93810C00448604 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		C722DACC2C99DB48005E0466 /* BallNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallNode.swift; sourceTree = "<group>"; };
+		C722DACE2C99DD5C005E0466 /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		C722DAD02C99DE91005E0466 /* BarrierNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrierNode.swift; sourceTree = "<group>"; };
+		C722DAD22C99F408005E0466 /* BrickNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickNode.swift; sourceTree = "<group>"; };
+		C7460D4B2C97430600073289 /* WheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelView.swift; sourceTree = "<group>"; };
+		C7460D4D2C97430E00073289 /* WheelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WheelView.xib; sourceTree = "<group>"; };
+		C7460D512C975FEB00073289 /* RouletteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteModel.swift; sourceTree = "<group>"; };
+		C7460D532C9761F000073289 /* Judson-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Judson-Bold.ttf"; sourceTree = "<group>"; };
+		C7B331792C95852F005B5469 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		C7B3317D2C95B263005B5469 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		C7B3317F2C95B3DC005B5469 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		C7B331842C95D820005B5469 /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		C7B331862C95D835005B5469 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		C7B331902C95EEE6005B5469 /* SlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotView.swift; sourceTree = "<group>"; };
+		C7B331922C95EEEE005B5469 /* SlotView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlotView.xib; sourceTree = "<group>"; };
+		C7E157042C95F6CD0045BA4F /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		C7E157062C95F6DD0045BA4F /* PopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C7D9D1C42C9B5A7A00ABB9C0 /* sounds */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = sounds; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7093D7C2C935F2400448604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7093D762C935F2400448604 = {
+			isa = PBXGroup;
+			children = (
+				C7093D812C935F2400448604 /* RocketplayCasino */,
+				C7093D802C935F2400448604 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7093D802C935F2400448604 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7093D7F2C935F2400448604 /* RocketplayCasino.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7093D812C935F2400448604 /* RocketplayCasino */ = {
+			isa = PBXGroup;
+			children = (
+				C7093D9D2C935FA500448604 /* SystemFiles */,
+				C7093D9B2C935F9500448604 /* GameScene */,
+				C7093D9C2C935F9E00448604 /* Controllers */,
+				C7093D992C935F8000448604 /* Storyboards */,
+				C7093D9E2C93600300448604 /* View */,
+				C7093DB02C93806300448604 /* ViewModel */,
+				C7B331832C95D811005B5469 /* Model */,
+				C7093DAD2C93803200448604 /* Extensions */,
+				C7093DB12C93807000448604 /* Helpers */,
+				C7093D9A2C935F8F00448604 /* Assets */,
+			);
+			path = RocketplayCasino;
+			sourceTree = "<group>";
+		};
+		C7093D992C935F8000448604 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C7093D8C2C935F2400448604 /* Main.storyboard */,
+				C7093D912C935F2500448604 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C7093D9A2C935F8F00448604 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C7093D8F2C935F2500448604 /* Assets.xcassets */,
+				C7D9D1C42C9B5A7A00ABB9C0 /* sounds */,
+				C7093DA42C936D1B00448604 /* fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C7093D9B2C935F9500448604 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				C7093D882C935F2400448604 /* GameScene.swift */,
+				C722DACB2C99DB0D005E0466 /* NodeComponents */,
+			);
+			path = GameScene;
+			sourceTree = "<group>";
+		};
+		C7093D9C2C935F9E00448604 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7093DB62C93810C00448604 /* SplashViewController.swift */,
+				C7093DA12C93622000448604 /* MenuViewController.swift */,
+				C7093DB42C9380B500448604 /* SettingViewController.swift */,
+				C7B331792C95852F005B5469 /* QuizViewController.swift */,
+				C7093D8A2C935F2400448604 /* GameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C7093D9D2C935FA500448604 /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C7093D822C935F2400448604 /* AppDelegate.swift */,
+				C7093DA62C936D2900448604 /* Info.plist */,
+			);
+			path = SystemFiles;
+			sourceTree = "<group>";
+		};
+		C7093D9E2C93600300448604 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7E157032C95F6BF0045BA4F /* PopupView */,
+				C7B3318F2C95EED6005B5469 /* SlotView */,
+				C7460D4A2C9742E200073289 /* WheelView */,
+				C7093D9F2C93604100448604 /* GradientView.swift */,
+				C7093DAA2C937DCA00448604 /* ShadowButton.swift */,
+				C7B3317F2C95B3DC005B5469 /* CustomButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7093DA42C936D1B00448604 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C7460D532C9761F000073289 /* Judson-Bold.ttf */,
+				C7093DA72C93776000448604 /* Inter-VariableFont_opsz,wght.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		C7093DAD2C93803200448604 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C7093DAE2C93804700448604 /* UIView+Ext.swift */,
+				C7B3317D2C95B263005B5469 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C7093DB02C93806300448604 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7B331862C95D835005B5469 /* GameViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7093DB12C93807000448604 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C7093DB22C93807E00448604 /* AudioManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C722DACB2C99DB0D005E0466 /* NodeComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C722DACC2C99DB48005E0466 /* BallNode.swift */,
+				C722DAD02C99DE91005E0466 /* BarrierNode.swift */,
+				C722DAD22C99F408005E0466 /* BrickNode.swift */,
+			);
+			path = NodeComponents;
+			sourceTree = "<group>";
+		};
+		C7460D4A2C9742E200073289 /* WheelView */ = {
+			isa = PBXGroup;
+			children = (
+				C7460D4B2C97430600073289 /* WheelView.swift */,
+				C7460D4D2C97430E00073289 /* WheelView.xib */,
+			);
+			path = WheelView;
+			sourceTree = "<group>";
+		};
+		C7B331832C95D811005B5469 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7B331842C95D820005B5469 /* GameModels.swift */,
+				C7460D512C975FEB00073289 /* RouletteModel.swift */,
+				C722DACE2C99DD5C005E0466 /* PhysicsCategory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7B3318F2C95EED6005B5469 /* SlotView */ = {
+			isa = PBXGroup;
+			children = (
+				C7B331902C95EEE6005B5469 /* SlotView.swift */,
+				C7B331922C95EEEE005B5469 /* SlotView.xib */,
+			);
+			path = SlotView;
+			sourceTree = "<group>";
+		};
+		C7E157032C95F6BF0045BA4F /* PopupView */ = {
+			isa = PBXGroup;
+			children = (
+				C7E157042C95F6CD0045BA4F /* PopupView.swift */,
+				C7E157062C95F6DD0045BA4F /* PopupView.xib */,
+			);
+			path = PopupView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7093D7E2C935F2400448604 /* RocketplayCasino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7093D962C935F2500448604 /* Build configuration list for PBXNativeTarget "RocketplayCasino" */;
+			buildPhases = (
+				C7093D7B2C935F2400448604 /* Sources */,
+				C7093D7C2C935F2400448604 /* Frameworks */,
+				C7093D7D2C935F2400448604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C7D9D1C42C9B5A7A00ABB9C0 /* sounds */,
+			);
+			name = RocketplayCasino;
+			productName = RocketplayCasino;
+			productReference = C7093D7F2C935F2400448604 /* RocketplayCasino.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7093D772C935F2400448604 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					C7093D7E2C935F2400448604 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = C7093D7A2C935F2400448604 /* Build configuration list for PBXProject "RocketplayCasino" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7093D762C935F2400448604;
+			productRefGroup = C7093D802C935F2400448604 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7093D7E2C935F2400448604 /* RocketplayCasino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7093D7D2C935F2400448604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7093D8E2C935F2400448604 /* Base in Resources */,
+				C7460D4E2C97430E00073289 /* WheelView.xib in Resources */,
+				C7093D902C935F2500448604 /* Assets.xcassets in Resources */,
+				C7093DA82C93776000448604 /* Inter-VariableFont_opsz,wght.ttf in Resources */,
+				C7460D542C9761F000073289 /* Judson-Bold.ttf in Resources */,
+				C7E157072C95F6DD0045BA4F /* PopupView.xib in Resources */,
+				C7093D932C935F2500448604 /* Base in Resources */,
+				C7B331932C95EEEE005B5469 /* SlotView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7093D7B2C935F2400448604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7460D522C975FEB00073289 /* RouletteModel.swift in Sources */,
+				C7B331802C95B3DC005B5469 /* CustomButton.swift in Sources */,
+				C722DACD2C99DB48005E0466 /* BallNode.swift in Sources */,
+				C722DAD12C99DE91005E0466 /* BarrierNode.swift in Sources */,
+				C7093D892C935F2400448604 /* GameScene.swift in Sources */,
+				C7093DAB2C937DCA00448604 /* ShadowButton.swift in Sources */,
+				C7093DB32C93807E00448604 /* AudioManager.swift in Sources */,
+				C722DACF2C99DD5C005E0466 /* PhysicsCategory.swift in Sources */,
+				C7B331872C95D835005B5469 /* GameViewModel.swift in Sources */,
+				C7093DA22C93622000448604 /* MenuViewController.swift in Sources */,
+				C7460D4C2C97430600073289 /* WheelView.swift in Sources */,
+				C7093D8B2C935F2400448604 /* GameViewController.swift in Sources */,
+				C7093DB52C9380B500448604 /* SettingViewController.swift in Sources */,
+				C7B331852C95D820005B5469 /* GameModels.swift in Sources */,
+				C7B331912C95EEE6005B5469 /* SlotView.swift in Sources */,
+				C7E157052C95F6CD0045BA4F /* PopupView.swift in Sources */,
+				C7B3317E2C95B263005B5469 /* String+Ext.swift in Sources */,
+				C7093DAF2C93804700448604 /* UIView+Ext.swift in Sources */,
+				C7B3317A2C95852F005B5469 /* QuizViewController.swift in Sources */,
+				C722DAD32C99F408005E0466 /* BrickNode.swift in Sources */,
+				C7093DA02C93604100448604 /* GradientView.swift in Sources */,
+				C7093D832C935F2400448604 /* AppDelegate.swift in Sources */,
+				C7093DB72C93810C00448604 /* SplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C7093D8C2C935F2400448604 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7093D8D2C935F2400448604 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7093D912C935F2500448604 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7093D922C935F2500448604 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7093D942C935F2500448604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7093D952C935F2500448604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7093D972C935F2500448604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WL843Y6GAK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RocketplayCasino/SystemFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rocketplay Casino";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.albondarchuk.RocketplayCasino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C7093D982C935F2500448604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WL843Y6GAK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RocketplayCasino/SystemFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rocketplay Casino";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.albondarchuk.RocketplayCasino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7093D7A2C935F2400448604 /* Build configuration list for PBXProject "RocketplayCasino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7093D942C935F2500448604 /* Debug */,
+				C7093D952C935F2500448604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7093D962C935F2500448604 /* Build configuration list for PBXNativeTarget "RocketplayCasino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7093D972C935F2500448604 /* Debug */,
+				C7093D982C935F2500448604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7093D772C935F2400448604 /* Project object */;
+}
