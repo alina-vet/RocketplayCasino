@@ -118,7 +118,7 @@ class QuizViewController: UIViewController {
         }
         
         toggleButtons.forEach { $0.isEnabled.toggle() }
-        spinButton.isEnabled = true
+        spinButton.isEnabled = currentBet > 0
     }
 }
 
@@ -143,6 +143,7 @@ extension QuizViewController {
         default:
             Task {
                 AudioManager.shared.playSounds("lose")
+                gameViewModel.balance = balance
                 try await Task.sleep(nanoseconds: 1_000_000_000)
                 restartGame()
             }
@@ -153,6 +154,7 @@ extension QuizViewController {
         switch gameViewModel.rouletteRewards[index].cellType {
         case .lose:
             AudioManager.shared.playSounds("lose")
+            gameViewModel.balance = balance
             restartGame()
         default:
             handleWin(reward: gameViewModel.rouletteRewards[index].score)
@@ -162,6 +164,7 @@ extension QuizViewController {
     private func handleWin(reward: Int) {
         AudioManager.shared.playSounds("win")
         balance += reward
+        gameViewModel.balance = balance
         currentWinScore += reward
         popupView.showPopupView(for: gameType, at: self)
     }
@@ -192,30 +195,28 @@ extension QuizViewController {
 // MARK: Bet Actions
 extension QuizViewController {
     private func decreaseBet() {
-        if (currentBet - gameViewModel.betStep) > 0 {
-            currentBet -= gameViewModel.betStep
-            balance += gameViewModel.betStep
-        } else {
-            toggleButtons.forEach { $0.isEnabled.toggle() }
+        guard (currentBet - gameViewModel.betStep) >= 0 else {
+            return
         }
+        currentBet -= gameViewModel.betStep
+        balance += gameViewModel.betStep
     }
     
     private func increaseBet() {
-        if (currentBet + gameViewModel.betStep) <= balance && currentBet + gameViewModel.betStep <= gameViewModel.maxBet {
-            currentBet += gameViewModel.betStep
-            balance -= gameViewModel.betStep
-        } else {
-            toggleButtons.forEach { $0.isEnabled.toggle() }
+        guard (currentBet + gameViewModel.betStep) <= balance &&
+                currentBet + gameViewModel.betStep <= gameViewModel.maxBet else {
+            return
         }
+        currentBet += gameViewModel.betStep
+        balance -= gameViewModel.betStep
     }
     
     private func maxBet(initialBet: Int) {
-        if balance >= gameViewModel.maxBet {
-            currentBet = gameViewModel.maxBet
-            balance -= (gameViewModel.maxBet - initialBet)
-        } else {
-            toggleButtons.first?.shake()
+        guard  balance >= gameViewModel.maxBet else {
+            return
         }
+        currentBet = gameViewModel.maxBet
+        balance -= (gameViewModel.maxBet - initialBet)
     }
 }
 

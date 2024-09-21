@@ -38,12 +38,20 @@ class SlotView: UIView {
         xibView.frame = self.bounds
         addSubview(xibView)
         
-        self.dropShadow(color: .white, 
+        setupPickerView()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.subviews.filter { $0.layer.name == "dropShadow" }
+            .forEach { $0.layer.removeFromSuperlayer() }
+        
+        self.dropShadow(color: .white,
                         blur: 25,
                         opacity: 1,
                         offSet: CGSize(width: 0,
                                        height: 4))
-        setupPickerView()
     }
     
     private func setupPickerView() {

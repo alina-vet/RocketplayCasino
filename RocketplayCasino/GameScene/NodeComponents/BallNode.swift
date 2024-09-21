@@ -9,9 +9,10 @@ import SpriteKit
 
 class BallNode: SKSpriteNode {
     
-    init() {
-        
-        let radius = UIScreen.main.bounds.height * (20 / 390)
+    var radius: CGFloat
+    
+    init(radius: CGFloat) {
+        self.radius = radius
         
         let nodeSize = CGSize(width: radius, height: radius)
         
@@ -20,9 +21,7 @@ class BallNode: SKSpriteNode {
         
         let physicsBody = SKPhysicsBody(circleOfRadius: radius * 0.4)
         physicsBody.isDynamic = false
-        physicsBody.restitution = 0.6
-        physicsBody.angularDamping = 0.2
-        physicsBody.linearDamping = 0.1
+        physicsBody.restitution = 0.2
         physicsBody.categoryBitMask = PhysicsCategory.ball
         physicsBody.contactTestBitMask = PhysicsCategory.brick | PhysicsCategory.barrier
         self.physicsBody = physicsBody

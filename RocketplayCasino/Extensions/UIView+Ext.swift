@@ -54,6 +54,7 @@ extension UIView {
         self.layer.shadowColor = color.cgColor
         self.layer.masksToBounds = false
         self.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
+        self.layer.name = "dropShadow"
     }
     
     func dropInnerShadow(to edges: [UIRectEdge], radius: CGFloat = 2.0, opacity: Float = 0.3, color: UIColor = UIColor.white) {

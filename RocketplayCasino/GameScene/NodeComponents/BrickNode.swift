@@ -10,17 +10,16 @@ import SpriteKit
 class BrickNode: SKSpriteNode {
     
     var number: Int
+    var brickSize: CGSize
     
-    init(number: Int) {
+    init(number: Int, brickSize: CGSize) {
         self.number = number
-        
-        let nodeSize = CGSize(width: UIScreen.main.bounds.height * (36 / 390),
-                              height: UIScreen.main.bounds.height * (21 / 390))
+        self.brickSize = brickSize
         
         let texture = SKTexture(imageNamed: "brick_\(number)")
-        super.init(texture: texture, color: .clear, size: nodeSize)
+        super.init(texture: texture, color: .clear, size: brickSize)
         
-        let physicsBody = SKPhysicsBody(texture: texture, size: nodeSize)
+        let physicsBody = SKPhysicsBody(texture: texture, size: brickSize)
         physicsBody.isDynamic = false
         physicsBody.categoryBitMask = PhysicsCategory.brick
         self.physicsBody = physicsBody

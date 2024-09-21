@@ -17,6 +17,7 @@ class GameViewController: UIViewController {
     @IBOutlet var toggleButtons: [UIButton]!
     @IBOutlet weak var totalScoreLabel: UILabel!
     @IBOutlet weak var betLabel: UILabel!
+    @IBOutlet var labelViews: [GradientView]!
     
     lazy var popupView: PopupView = {
         let popup = PopupView(frame: self.view.bounds)
@@ -55,6 +56,10 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGameScene()
+        labelViews.forEach {
+            $0.dropInnerShadow(to: [.top])
+            $0.layer.masksToBounds = true
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,6 +73,13 @@ class GameViewController: UIViewController {
         balance = gameViewModel.balance
         currentWinScore = 0
         restartGame()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        gameScene?.size = gameSceneView.bounds.size
+        gameScene?.position = CGPoint(x: gameSceneView.bounds.midX,
+                                      y: gameSceneView.bounds.midY)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -113,7 +125,7 @@ class GameViewController: UIViewController {
         }
         
         toggleButtons.forEach { $0.isEnabled.toggle() }
-        startButton.isEnabled = true
+        startButton.isEnabled = currentBet > 0
     }
 }
 
@@ -138,7 +150,6 @@ extension GameViewController {
         gameSceneView.ignoresSiblingOrder = true
         gameSceneView.showsFPS = false
         gameSceneView.showsNodeCount = false
-        gameSceneView.showsPhysics = true
     }
     
     private func handleGameOver() {
@@ -154,23 +165,22 @@ extension GameViewController {
 // MARK: Bet Actions
 extension GameViewController {
     private func decreaseBet() {
-        if (currentBet - gameViewModel.betStep) > 0 {
-            currentBet -= gameViewModel.betStep
-            balance += gameViewModel.betStep
-            gameScene?.currentBet = currentBet
-        } else {
-            toggleButtons.forEach { $0.isEnabled.toggle() }
+        guard (currentBet - gameViewModel.betStep) >= 0 else {
+            return
         }
+        currentBet -= gameViewModel.betStep
+        balance += gameViewModel.betStep
+        gameScene?.currentBet = currentBet
     }
     
     private func increaseBet() {
-        if (currentBet + gameViewModel.betStep) <= balance && currentBet + gameViewModel.betStep <= gameViewModel.maxBet {
-            currentBet += gameViewModel.betStep
-            balance -= gameViewModel.betStep
-            gameScene?.currentBet = currentBet
-        } else {
-            toggleButtons.forEach { $0.isEnabled.toggle() }
+        guard (currentBet + gameViewModel.betStep) <= balance &&
+                currentBet + gameViewModel.betStep <= gameViewModel.maxBet else {
+            return
         }
+        currentBet += gameViewModel.betStep
+        balance -= gameViewModel.betStep
+        gameScene?.currentBet = currentBet
     }
 }
 

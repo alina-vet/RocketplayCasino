@@ -13,6 +13,7 @@ class GameViewModel {
     
     let maxBet = 3000
     let betStep = 50
+    var currentBet: Int = 0
     
     let rouletteRewards = [
         RouletteModel(cellType: .jackpot, score: 20000),
